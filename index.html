@@ -1,89 +1,218 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tell Your Trip</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Trip Talk | Tourism and Travel Blog</title>
+    <meta name="description" content="Travel Advice, Travel Inspiration, Tourism Insight, Travel Photography" />
+    <link rel="shortcut icon" href="asset\logo.png">
+    <meta property="og:image" content="asset\logo.png">
+    <meta property="og:description" content="Check out new travel advice and inspiration now!">
+    <meta property="og:title" content="Trip Talk | Tourism and Travel Blog">
+
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/fontawesome-free-5.15.2-web/css/all.min.css">
+    <!-- <link rel="stylesheet" href="styles/responsive.css"> -->
 </head>
+
 <body>
-    <header id="site-header" role="banner">
-        <div class="logo-wrapper">
-            <img src="asset\logo.png" alt="Tell Your Trip Logo">
+    <header>
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="#">travel</a></li>
+                    <li><a href="#">insight</a></li>
+                    <li><a href="#">photography</a></li>
+                    <li><a href="#">about</a></li>
+                </ul>
         </div>
-        <nav role="navigation">
-            <ul>
-                <li><a href="#">Travel</a></li>
-                <li><a href="#">Insight</a></li>
-            </ul>
+        <!-- <div class="menu-toggle">
+            <input type="checkbox " />
+            <span></span>
+            <span></span>
+            <span></span>
+        </div> -->
         </nav>
+
+        <div class="slider">
+            <div class="mySlides fade">
+                <img src="asset/background-image/bg1.jpg" alt=" ">
+                <div class="text ">
+                    <h1>Trip Talk</h1>
+                </div>
+            </div>
+            <div class="mySlides fade">
+                <img src="asset/background-image/bg2.jpg" alt=" ">
+                <div class="text ">
+                    <h1>Trip Talk</h1>
+                </div>
+            </div>
+            <div class="mySlides fade">
+                <img src="asset/background-image/bg3.jpg" alt=" ">
+                <div class="text ">
+                    <h1>Trip Talk</h1>
+                </div>
+            </div>
+            <div class="mySlides fade">
+                <img src="asset/background-image/bg4.jpg" alt=" ">
+                <div class="text ">
+                    <h1>Trip Talk</h1>
+                </div>
+            </div>
+        </div>
+        </div>
     </header>
 
     <main>
         <div id="content">
-            <article id="travel" class="card">
-                <a href="#">Travel</a>
-                <h2>Menjelajahi salah satu Kota Musik UNESCO di Indonesia</h2>
-                <p>Program Kota Musik UNESCO merupakan bagian dari Jaringan Kota Kreatif yang lebih luas.</p>
-                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
-                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum 
-                    dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-                    officia deserunt mollit anim id est laborum."</p>
-                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
-                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum 
-                    dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-                    officia deserunt mollit anim id est laborum."</p>
+            <article class="card landscape">
+                <img src="asset/content-image/heritage-bandung.jpg " alt="Gedung Merdeka Kota Bandung ">
+                <div class="cardItem">
+                    <a class="category" href="#">Travel</a>
+                    <a class="title" href="#">
+                        <h2><i>Heritage Tour</i>: Melihat sisi lain dari Kota Bandung</h2>
+                    </a>
+                    <p>Bandung merupakan tujuan wisata favorit khususnya bagi warga dari Jakarta dan sekitarnya. Berbagai alasan muncul untuk mengunjungi kota kembang ini. Namun, belum banyak yang mengetahui pesona kota ini dari sisi sejarahnya.</p>
+                    <a class="readmore" href="#">Read more</a>
+            </article>
+            <article class="card potrait">
+                <img src="asset/content-image/sudut-kota-jogja.JPG " alt="Abdi Dalem Keraton Yogyakarta ">
+                <div class="cardItem">
+                    <a class="category" href="#">Photography</a>
+                    <a class="title" href="#">
+                        <h2>Sudut-sudut Kota Yogyakarta</h2>
+                    </a>
+                    <p>Kota yang populer sebagai tujuan wisata. Kaya akan daya tarik dan senyum hangat warganya, diabadikan dari sudut pandang yang berbeda.</p>
+                    <a class="readmore" href="#">Read more</a>
+                </div>
+            </article>
+            <article class="card potrait">
+                <img src="asset/content-image/traveler.jpg " alt="Traveller ">
+                <div class="cardItem">
+                    <a class="category" href="#">Insight</a>
+                    <a class="title" href="#">
+                        <h2>Cara menjadi seorang <i>Responsible Traveller</i></h2>
+                    </a>
+                    <p>Istilah <i>responsible traveller</i> sering kita dengar, terutama bagi yang gemar berwisata. Sebetulnya apa sih itu?</p>
+                    <a class="readmore" href="#">Read more</a>
+                </div>
             </article>
 
-            <article id="insight" class="card"> 
-                <a href="#">Insight</a>
-                <h2>Menjadi Seorang Responsible Traveller</h2>
-                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
-                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum 
-                    dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-                    officia deserunt mollit anim id est laborum."</p>
-                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
-                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum 
-                    dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-                    officia deserunt mollit anim id est laborum."</p> 
+            <article class="card landscape">
+                <img src="asset/content-image/akomodasi-jogja.jpg " alt="akomodasi di jogja ">
+                <div class="cardItem">
+                    <a class="category" href="#">Travel</a>
+                    <a class="title" href="#">
+                        <h2>10 Rekomendasi Akomodasi <i>Affordable</i> di Yogyakarta</h2>
+                    </a>
+                    <p>Bagi wisatawan yang hendak berkunjung ke Kota Jogja tentunya tidak perlu khawatir dan pusing lagi memikirkan akomodasi. Karena tujuan wisata favorit ini memiliki banyak pilihan akomodasi berkualitas dengan harga yang bersahabat.</p>
+                    <a class="readmore" href="#">Read more</a>
+                </div>
             </article>
-        </div>
 
-        <div id="widget" role="complementary">
-            <aside id="about-widget">
-                <div><a href=""><img src="" alt="">
-                <h4>About</h4>    
-                </a>
+
+            <article class="card potrait">
+                <img src="asset/content-image/sustainable-tourism.jpg " alt="Tourist Sign">
+                <div class="cardItem">
+                    <a class="category" href="#">Insight</a>
+                    <a class="title" href="#">
+                        <h2>Apa itu <i>Sustanaible Tourism</i>? Apakah perlu diterapkan?</h2>
+                    </a>
+                    <p>Pariwisata sangat erat kaitannya dengan lingkungan dan budaya. Mengapa bisa berkaitan erat?</p>
+                    <a class="readmore" href="#">Read more</a>
+                </div>
+            </article>
+            <article class="card landscape">
+                <img src="asset/content-image/ambon-kota-musik.jpg " alt="Ambon Kota Musik ">
+                <div class="cardItem">
+                    <a class="category " href="#">Travel</a>
+                    <a class="title" href="#">
+                        <h2>Menjelajahi Kota Musik UNESCO di Indonesia</h2>
+                    </a>
+                    <p>UNESCO menetapkan beberapa kota di dunia sebagai Kota Musik. Namun, masih banyak yang belum tahu bahwa salah satunya berada di Indonesia, tepatnya di Kota Ambon. Ibu Kota dari Provinsi Maluku ini ternyata memiliki beragam daya tarik
+                        wisata yang patut untuk dikunjungi.
+                    </p>
+                    <a class="readmore" href="#">Read more</a>
+                </div>
+            </article>
+            </div>
+
+
+            <aside>
+                <div id="search-box">
+                    <form action="https://www.google.com/search" method="get">
+                        <input type="text" placeholder="Search" name="q">
+                        <button type="submit"><i class="fa fa-search "></i></button>
+                    </form>
+                </div>
+
+                <div id="about-box">
+                    <div class="about-img">
+                        <img src="asset/profile.JPG" />
+                    </div>
+                    <div class="about-item">
+                        <h2>About Me</h2>
+                        <p>Halo! My name is <b>Krisdina</b>.<br> Thank you for visiting my site.</p>
+                        <a href="# ">Find Out More</a>
+                    </div>
+                </div>
+
+                <div id="sosmed-box">
+                    <h2>Let's Connect!</h2>
+                    <a href="# "><i class="fab fa-instagram "></i></a>
+                    <a href="# "><i class="fab fa-twitter "></i></a>
+                    <a href="# "><i class="fab fa-facebook-f "></i></a>
                 </div>
             </aside>
-
-            <aside id="socmed-widget">
-                <h4>Let's Connect</h4>
-                <div>
-                    <a href="#"></a>
-                </div>
-
-            </aside>
-        </div>
-
-        
     </main>
+
     <footer>
-        <div class="footer-about">
-            <h1>tell your trip</h1>
-            <p>Halo, Selamat Datang! <strong>Tell Your Trip</strong> adalah sebuah situs yang berbagi cerita dan informasi seputar tourism dan travel. Terima kasih sudah membaca.</p>    
+        <div class="top-footer">
+            <div class="footer-about">
+                <h3>Trip Talk</h3>
+                <p>Halo, Selamat Datang! <b>Trip Talk</b> adalah sebuah situs yang berbagi cerita dan informasi seputar tourism dan travel. Terima kasih sudah membaca.</p>
+            </div>
+            <div class="footer-category">
+                <a href="#">travel</a>
+                <a href="#">insight</a>
+                <a href="#">photography</a>
+                <a href="#">about</a>
+            </div>
+            <div class="footer-socmed">
+                <h3>Let's Connect!</h3>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+            </div>
         </div>
-        <div class="footer-category">
-            <a href="#">travel</a>
-            <a href="#">insight</a>
-        </div>
-        <div class="footer-socmed">
-            <a href="#"></a>
+        <hr>
+        <div class="bottom-footer">
+            <p>&copy; Copyright Trip Talk 2021</p>
         </div>
     </footer>
+
+    <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1
+            }
+
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 3000);
+        }
+    </script>
+
 </body>
+
 </html>
