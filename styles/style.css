@@ -272,16 +272,15 @@ footer h3 {
 }
 
 .top-footer {
-    padding: 30px 80px;
+    padding: 50px;
     display: flex;
-    height: 180px;
-    justify-content: center;
+    height: auto;
+    justify-content: space-between;
     align-items: center;
 }
 
 .footer-about {
     width: 40%;
-    margin-right: 20px;
 }
 
 .footer-category {
@@ -298,7 +297,7 @@ footer h3 {
 
 .footer-socmed {
     width: 20%;
-    margin: 0 10px;
+    margin: 0;
     text-align: center;
 }
 
